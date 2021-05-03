@@ -15,3 +15,7 @@ R語言基本語法
   或 
   x <- 4 + 5  指派運算
   
+Vector:
+  類似python中的list，語法為:
+  c(x, y, z, ...)   其中x, y, z...需被視為相同data type
+  
