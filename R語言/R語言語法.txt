@@ -1,1 +1,17 @@
+R語言基本語法
 
+
+列印出內容:
+  print("Hello world")
+  
+安裝下載packages:
+  install.packages("下載資料")
+  
+載入下載package:
+  library("Package")
+  
+定義變數:
+  x = 4 + 5  賦值運算
+  或 
+  x <- 4 + 5  指派運算
+  
