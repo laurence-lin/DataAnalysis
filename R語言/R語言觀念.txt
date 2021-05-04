@@ -5,6 +5,15 @@ R language:
 主要優點: 支援大量統計分析工具、資料視覺化
 
 
+R語言在使用package時需先load package,即import
+library(package name)
+
+R語言中的三種date data type:
+  1. date: 2011-01-02
+  2. time within a day: 20:11:59 UTC
+  3. datetime: 2018-03-31 18:15:48 UTC
+
+
 names: 可對vector和list中的element進行命名
   如: vec1 <- c(1, 2, 3)
   names(vec1) <- c("var1", "var2", "var3")
