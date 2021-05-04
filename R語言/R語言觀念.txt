@@ -26,4 +26,8 @@ names: 可對vector和list中的element進行命名
     vector 包含了四種可能的data type: integer, character, double, logical(TRUE FALSE), 一個vector中只能有一種data type
   list:
     可包含不同的data type在同一個list內
+    
+    
+常用特殊用途R packages:
+  tidyverse: data science 用package, 支援data manipulation, transformation, exploration, visualization等data analysis
 
