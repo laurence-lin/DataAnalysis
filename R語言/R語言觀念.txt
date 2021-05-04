@@ -4,3 +4,17 @@ R language:
 
 主要優點: 支援大量統計分析工具、資料視覺化
 
+
+names: 可對vector和list中的element進行命名
+  如: vec1 <- c(1, 2, 3)
+  names(vec1) <- c("var1", "var2", "var3")
+
+  list("var1" = 1, "var2" = 4)
+
+
+兩種Vector: atomic vector & list
+  atomic vector:
+    vector 包含了四種可能的data type: integer, character, double, logical(TRUE FALSE), 一個vector中只能有一種data type
+  list:
+    可包含不同的data type在同一個list內
+
