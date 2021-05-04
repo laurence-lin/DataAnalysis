@@ -1,5 +1,24 @@
 R語言基本語法
 
+邏輯運算子: AND, OR, NOT
+AND: &
+OR: |
+NOT: !
+
+用運算子來filter取得dataframe中的row:
+column_1 > 100 & column_2 == "Jack"  <= 設定回傳column1, column2滿足條件時的row
+
+if-else條件式:
+ if (condition) {
+   statement
+ }
+ else if {
+    statement 1
+ }
+ else {
+   statement 2
+   }
+
 
 列印出內容:
   print("Hello world")
@@ -46,9 +65,21 @@ Vector: R語言中的atomic vector, 其內的物件需為相同data type
    轉換為datetime類別: 除date外，加上_hms(hour, minute, second)
    如: ymd_hms("2021-01-20 20:11:59")
    
+ 建立數列sequence:
+   c(start:end)  會產生由start 到end的數字list
+   
    
  Dataframe:
    建立dataframe: data.frame()
+   設定column值:
+     data.frame(col1 = c(x1, x2, x3), col2 = c(x4, x5, x6))
+     
+ Files: 在R語言中和file溝通
+   建立空白file: file.create("new_file.csv")
+   
+   複製file到地點: file.copy("filename", "location of the copied file")
+   
+   刪除file: unlink("file name")
    
    
    
