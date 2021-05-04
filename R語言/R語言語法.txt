@@ -33,4 +33,28 @@ Vector: R語言中的atomic vector, 其內的物件需為相同data type
  List: 類似python中的list, 可包含不同data type 
     x <- list(TRUE, 4, "hahaha")
   
+ 日期與時間:
+   先load package: library(tidyverse)
+   library(lubridate)
+   
+   取得現在日期: today()
+   取得現在datetime: now()
+   
+   將string轉換為date類別: ymd, myd, ...
+   如: ymd("2013-01-02"), ymd(20200804)
+   
+   轉換為datetime類別: 除date外，加上_hms(hour, minute, second)
+   如: ymd_hms("2021-01-20 20:11:59")
+   
+   
+ Dataframe:
+   建立dataframe: data.frame()
+   
+   
+   
+   
+   
+  
+  
+  
   
