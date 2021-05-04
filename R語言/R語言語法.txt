@@ -15,7 +15,22 @@ R語言基本語法
   或 
   x <- 4 + 5  指派運算
   
-Vector:
-  類似python中的list，語法為:
+顯示data type: typeof()
+  
+  
+Vector: R語言中的atomic vector, 其內的物件需為相同data type
+  語法為:
   c(x, y, z, ...)   其中x, y, z...需被視為相同data type
+  
+  在vector中建立integer: 加上L 
+      c(2L, 24L)
+      
+  查詢vector長度: length(vector)
+  
+  回傳vector是否為data type的logical: is.integer(), is.character(), is.double(), is.logical()
+  
+ 
+ List: 類似python中的list, 可包含不同data type 
+    x <- list(TRUE, 4, "hahaha")
+  
   
