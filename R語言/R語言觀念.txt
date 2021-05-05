@@ -38,6 +38,9 @@ names: 可對vector和list中的element進行命名
 Pipe: R語言中，使用Pipe可將 "pipe左側"的物件傳至"pipe右側"的第一個參數進行運算
   如: variable %>% function()
    相當於 function(variable)
+   
+tibbles: R語言中的特殊結構，類似stream line dataframes, 但只秀出screen上可呈現的有限數量row, 且無法像dataframe那般修改tribble內容。
+   優點在於處理Large datasets時，tibble便於預覽資料
 
 
 
