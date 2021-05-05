@@ -33,4 +33,12 @@ names: 可對vector和list中的element進行命名
 
 常用特殊用途R packages:
   tidyverse: data science 用package, 支援data manipulation, transformation, exploration, visualization等data analysis
+  
+  
+Pipe: R語言中，使用Pipe可將 "pipe左側"的物件傳至"pipe右側"的第一個參數進行運算
+  如: variable %>% function()
+   相當於 function(variable)
+
+
+
 
