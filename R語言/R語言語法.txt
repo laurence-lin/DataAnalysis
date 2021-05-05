@@ -95,7 +95,13 @@ tidyverse常用分析工具:
    
    
    
-Pipe:
+Pipe: 使用%>%符號，優點為讓Nested code(多層包覆的function)更加漂亮容易維護
+  例:
+     function1() %>%
+       function2() %>%
+         function3()
+         
+     相當於 function3(function2(function1())), 但程式更加容易修改維護
 
 Nested:
   Nested function, 即function包含在另一個function之內
