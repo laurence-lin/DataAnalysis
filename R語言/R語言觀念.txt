@@ -27,7 +27,10 @@ names: 可對vector和list中的element進行命名
   list:
     可包含不同的data type在同一個list內
     
-    
+
+開放R package社群: CRAN
+  包含R user開發，被認證過valid的open source R package。可在其中下載各種R package進行install
+
 常用特殊用途R packages:
   tidyverse: data science 用package, 支援data manipulation, transformation, exploration, visualization等data analysis
 
