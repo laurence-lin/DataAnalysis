@@ -1,5 +1,11 @@
 R語言基本語法
 
+內建function:
+觀察data: View(data)
+ 
+列印: print(內容)
+
+
 Check if a package has new version:
 Ex. tidyverse_update()
 
@@ -81,6 +87,19 @@ Vector: R語言中的atomic vector, 其內的物件需為相同data type
    建立dataframe: data.frame()
    設定column值:
      data.frame(col1 = c(x1, x2, x3), col2 = c(x4, x5, x6))
+     
+     
+   DataFrame方法:
+     dataframe結構: 即各columns的description: str(dataframe), 代表structure of dataframe
+     dataframe column: colnames(dataframe)
+     
+     新增column: dplyr.mutate
+        mutate(dataframe, new_column = VALUE)
+        
+ tibbles:
+   從data 建立tibble: as_tibble(data)
+
+
      
  Files: 在R語言中和file溝通
    建立空白file: file.create("new_file.csv")
