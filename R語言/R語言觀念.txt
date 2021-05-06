@@ -4,6 +4,12 @@ R language:
 
 主要優點: 支援大量統計分析工具、資料視覺化
 
+R常用的功能package:
+ 
+readr: import dataset
+ 
+dplyr: data cleaning
+
 
 R語言在使用package時需先load package,即import
 library(package name)
