@@ -102,6 +102,10 @@ Vector: R語言中的atomic vector, 其內的物件需為相同data type
      新增column: dplyr.mutate
         mutate(dataframe, new_column = VALUE)
         
+     預覽dataframe內容: 
+        head(dataframe) 
+        glimpse(dataframe)
+      
  tibbles:
    從data 建立tibble: as_tibble(data)
 
