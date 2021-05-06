@@ -117,6 +117,8 @@ Vector: R語言中的atomic vector, 其內的物件需為相同data type
         統計量可為總row: n()
           不重複的row: n_distinct()
           
+     Groupby: group_by(dataframe, 用來group_by的column)
+          
       
  tibbles:
    從data 建立tibble: as_tibble(data)
