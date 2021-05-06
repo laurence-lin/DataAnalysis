@@ -112,6 +112,11 @@ Vector: R語言中的atomic vector, 其內的物件需為相同data type
      排序dataframe, 使用某column值: arrange(dataframe, column)
      
      取得單一column值: dataframe$column
+     
+     計算column統計值: summarise(dataframe, column_統計量 = 計算的統計量)
+        統計量可為總row: n()
+          不重複的row: n_distinct()
+          
       
  tibbles:
    從data 建立tibble: as_tibble(data)
