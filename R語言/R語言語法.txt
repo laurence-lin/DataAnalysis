@@ -107,6 +107,8 @@ Vector: R語言中的atomic vector, 其內的物件需為相同data type
         glimpse(dataframe)
         
      選擇sub columns出來: select(dataframe, column1, column2...)
+     
+     排序dataframe, 使用某column值: arrange(dataframe, column)
       
  tibbles:
    從data 建立tibble: as_tibble(data)
