@@ -105,6 +105,8 @@ Vector: R語言中的atomic vector, 其內的物件需為相同data type
      預覽dataframe內容: 
         head(dataframe) 
         glimpse(dataframe)
+        
+     選擇sub columns出來: select(dataframe, column1, column2...)
       
  tibbles:
    從data 建立tibble: as_tibble(data)
