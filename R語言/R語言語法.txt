@@ -113,7 +113,8 @@ Vector: R語言中的atomic vector, 其內的物件需為相同data type
      
      取得單一column值: dataframe$column
      
-     計算column統計值: summarise(dataframe, column_統計量 = 計算的統計量)
+     計算column統計值: 常用於將group_by的結果丟進函數，計算統計量
+        summarise(dataframe, column_統計量 = 計算的統計量)
         統計量可為總row: n()
           不重複的row: n_distinct()
           
