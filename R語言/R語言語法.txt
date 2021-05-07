@@ -118,6 +118,9 @@ Vector: R語言中的atomic vector, 其內的物件需為相同data type
           不重複的row: n_distinct()
           
      Groupby: group_by(dataframe, 用來group_by的column)
+     
+     Drop Null values: drop_na(dataframe)
+       Drop all rows containing missing values
           
       
  tibbles:
