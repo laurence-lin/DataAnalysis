@@ -122,7 +122,13 @@ Vector: R語言中的atomic vector, 其內的物件需為相同data type
      
      Drop Null values: drop_na(dataframe)
        Drop all rows containing missing values
-          
+       
+     filter取得特定欄位的特定值row:
+       filter(dataframe, column_A = value) 
+       取得當column_A = value時的row
+       
+     結合column: unite(dataframe, new_column, c(column1, column2), sep="", remove=TRUE)
+          將dataframe內的複數column用 sep 結合起來，包括column name和column values
       
  tibbles:
    從data 建立tibble: as_tibble(data)
