@@ -179,13 +179,14 @@ Visualization:
   函數用aes做外觀設計
   ggplot:
      ggplot由許多layer組成: 一個ggplot本體 + 其它layer
-     ggplot(data = dataset) + 
+     ggplot(data = dataset, mapping = aes()) + 
          geom_point(mapping = aes(x = col1, y = col2),
            color = "",
          )  # Geom 類型
      
   Geom: 
     geom_point(), geom_line(), geom_scatter()
+    geom_smooth(), geom_bar()
     
   aes: Aesthetics, 代表plot的visualize屬性
      aes(x = , y = , shape = , size = , color = , alpha = )
@@ -195,6 +196,10 @@ Visualization:
     1. 用ggplot並選擇dataset
     2. 選擇要用來圖像化的Geom
     3. 用aes來對column做mapping
+    
+  Facet: 將不同group的data顯示於不同plot, 並同時顯示出來
+    facet_wrap(~col_for_subgroup)
+  
   
     要將Plot的設定套用到column ->設定aes，要將plot設定套用到整張圖 -> 設定Geoms
   
