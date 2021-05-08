@@ -166,6 +166,14 @@ Nested:
 Bias: 計算一個list 和另一個list的差異程度
   bias(list1, list2)
    
+   
+Visualization: 
+   Specific columns: Plotly, ggplot2, RGL, Lattice
+   Characteristics: 
+      Aesthetics: How the chart shows, like color, size of scatter plot dot, ...etc
+      Geoms: Type of chart, like line, bar chart, scatter plot...etc
+      Facets: Display smaller group of subsets in the data
+      Label & annotations: titles
   
   
   
