@@ -175,6 +175,14 @@ Visualization:
       Facets: Display smaller group of subsets in the data
       Label & annotations: titles
   
+  一般用ggplot加上Geom, Facet一起設計圖像化
+  函數用aes做外觀設計
+  ggplot:
+     ggplot(data = dataset, aes(x = col1, y = col2)) + 
+         geom_point()  # Geom 類型
+     
+  Geom: 
+    geom_point(), geom_line(), geom_scatter()
   
   
   
