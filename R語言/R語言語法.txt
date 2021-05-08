@@ -4,7 +4,7 @@ R語言基本語法
 觀察data: View(data)
 載入預設data: data(default_dataset)
 列印: print(內容)
-計算: max(), min()
+計算: max(), min(), mean(), sd()
 
 載入外部資料: readr() package
   載入csv:  read_csv()
@@ -129,6 +129,9 @@ Vector: R語言中的atomic vector, 其內的物件需為相同data type
        
      結合column: unite(dataframe, new_column, c(column1, column2), sep="", remove=TRUE)
           將dataframe內的複數column用 sep 結合起來，包括column name和column values
+          
+     Split column:
+       separate(dataframe, column_to_split, c(sub_column1, sub_column2), sep = "")
       
  tibbles:
    從data 建立tibble: as_tibble(data)
@@ -159,6 +162,9 @@ Pipe: 使用%>%符號，優點為讓Nested code(多層包覆的function)更加�
 Nested:
   Nested function, 即function包含在另一個function之內
    
+   
+Bias: 計算一個list 和另一個list的差異程度
+  bias(list1, list2)
    
   
   
