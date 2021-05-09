@@ -47,6 +47,20 @@ Pipe: R語言中，使用Pipe可將 "pipe左側"的物件傳至"pipe右側"的�
    
 tibbles: R語言中的特殊結構，類似stream line dataframes, 但只秀出screen上可呈現的有限數量row, 且無法像dataframe那般修改tribble內容。
    優點在於處理Large datasets時，tibble便於預覽資料
+   
+Documentation & Reports:
+  Create document for R projects for recording and management, and share with team members.
+  
+  Markdown: Save and execute code, generate reports and share with others.
+   R markdown is a great tool to document and record our analysis at each stage.
+   R markdown ends with .Rmd, 可用於Html, PDF等形式展現。
+   R markdown即用R program加上每個stage的注釋後，存為.Rmd, 並用HTML等格式呈現。類似jupyter notebook.
+   
+  
+  
+  
+  
+  
 
 
 
