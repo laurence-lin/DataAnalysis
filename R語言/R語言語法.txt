@@ -203,10 +203,14 @@ Visualization:
   
     要將Plot的設定套用到column ->設定aes，要將plot設定套用到整張圖 -> 設定Geoms
   
+  theme: 此layer可將plot上的data以外樣式做customize
+    如x-axis, y-axis text等
+    theme(axis.text.x = element_text(angle=45)
+  
   Label & Annotations: 在ggplot上加上此layer，即可在圖上做text注釋
   
   Label: 對整張圖做text標注
-     labs()
+     labs(title = , subtitle = , )
      
   Annotation: 對圖的某部份(如data point)做標注
      annotation()
