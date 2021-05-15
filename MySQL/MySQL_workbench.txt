@@ -1,0 +1,7 @@
+
+MySQL workbench: Mysql 專用操作軟體，類似PostgreSQL的pgadmin, 可管理MySQL資料庫
+
+操作步驟:
+  1. 下載MySQL，安裝附加的workbench工具後，開啟並和本地端電腦建立連線
+  2. 建立新schema -> 新table
+
