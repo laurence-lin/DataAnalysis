@@ -218,7 +218,7 @@ Visualization:
   
 List操作:
   秀出所有路徑中的檔案: list.files()
-  指定data type: list.files("/*.csv")
+  指定data type: list.files(pattern = "/*.csv")
   
   對list中的各個元素使用function: 
      lapply(input_list, row_or_column, function_to_apply)
