@@ -6,3 +6,9 @@ MySQL workbench: Mysql 專用操作軟體，類似PostgreSQL的pgadmin, 可管�
   2. 建立新schema 
   3. 在新schema下建立新table
 
+將CSV 匯入table:
+  1. 在workbench中對schema使用import data wizard
+  2. 選擇csv file, 自動建立table
+  3. 若建立的table 為empty, 則再用load data infile匯入csv內容
+
+
