@@ -1,1 +1,7 @@
-MYSQL
+MYSQL指令:
+
+
+
+已有table field, 匯入csv: LOAD DATA INFILE
+  
+
