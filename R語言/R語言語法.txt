@@ -5,6 +5,8 @@ R語言基本語法
 載入預設data: data(default_dataset)
 列印: print(內容)
 計算: max(), min(), mean(), sd()
+回傳物件的class: class(object) # 此為我們建立的class name, 如data.frame為class name
+回傳物件在R storage中的類別: typeof(object)  # 此為R中的類別，如data.frame為list of collection, 故為list
 
 列印input指令:
   單行輸入: input_data <- readline()
@@ -94,6 +96,11 @@ Vector: R語言中的atomic vector, 其內的物件需為相同data type
    
  建立數列sequence:
    c(start:end)  會產生由start 到end的數字list
+   
+   
+   
+ Work with data:
+   Load in csv file: read.csv() 回傳dataframe結構
    
    
  Dataframe:
@@ -248,9 +255,16 @@ List操作:
   秀出所有路徑中的檔案: list.files(path = 'directory', pattern = 'data extend')
   
   
-  對list中的各個元素使用function: 
-     lapply(input_list, row_or_column, function_to_apply)
+  對list中的各個元素使用function: apply, lapply
   
+     lapply(input_list, row_or_column, function_to_apply): 回傳list
+  
+  
+分割string: 
+  strsplit(string, separate_pattern)   回傳list
+  
+設定將string設為variable name: assign()
+  assign(string, variable_value)  得到有variable_value的string名稱物件
   
   
   
