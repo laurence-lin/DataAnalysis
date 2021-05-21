@@ -2,6 +2,18 @@ MYSQL指令:
 
 
 
-已有table field, 匯入csv: LOAD DATA INFILE
+MYSQL中的filepath:
+  slash "/" 或double backslash "\\"
+
+已有table field, 匯入csv: 
+   LOAD DATA [LOCAL]INFILE "file.csv"
+   INTO TABLE dailycalories_merged
+   FIELDS TERMINATED BY ';'
+   LINES TERMINATED BY '\n'
+   IGNORE 1 LINES
+   SET Id = NULL
+
+
+   [LOCAL]: file在server端，則不加LOCAL。file在client端，則需要加上LOCAL
   
 
