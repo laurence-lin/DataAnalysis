@@ -1,0 +1,8 @@
+Sqlalchemy: 和database溝通的python套件，建立engine和database的API溝通，類似postgresql的psycopg
+可自動建立table並匯入資料
+
+Engine: 
+  sqlalchemy用engine和database API溝通。
+  Database API為實現Pool和Dialect功能以完成"資料庫的各項動作"，需建立engine來接收pool 和dialect的資訊。
+
+
