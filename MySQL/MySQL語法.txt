@@ -16,4 +16,20 @@ MYSQL中的filepath:
 
    [LOCAL]: file在server端，則不加LOCAL。file在client端，則需要加上LOCAL
   
+  
+建立Table:
+  CREATE TABLE 
+
+
+清除table:
+  DROP TABLE IF EXISTS table_name;
+  
+  
+新增new row資料:
+  INSERT INTO table_name
+    (column_name, column_name, ...)
+  VALUES
+    (value_to_insert, value_to_insert...)
+  
+  
 
