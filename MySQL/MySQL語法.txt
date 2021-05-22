@@ -18,7 +18,12 @@ MYSQL中的filepath:
   
   
 建立Table:
-  CREATE TABLE 
+  CREATE TABLE table_name (
+    SN INT NOT NULL AUTO_INCREMENT PRIMARY KEY,    # Set up primary key SN that would automatically increment, without we insert value
+    VALUE_1 INT NOT NULL,   # set columns name "VALUE_1" with INTEGER type, and limitation NOT NULL
+    VALUE_2 VARCHAR(20) NOT NULL # set columns with variant length character, with 1~8000 bytes length
+    VALUE_3 DATETIME   # set columns as DATETIME format: YYYY-MM-DD HH:MM:SS
+  )
 
 
 清除table:
@@ -30,6 +35,9 @@ MYSQL中的filepath:
     (column_name, column_name, ...)
   VALUES
     (value_to_insert, value_to_insert...)
-  
+    
+用python API進行query後新增更新至DB:
+  cursor.execute("INSERT INTO employees (first_name) VALUES (%s)", ('Jane')) # 這行只是在此執行階段執行query, 可看到結果但不會更新DB server
+  conn.commit()   # 這行會把當前的query操作更新至db server
   
 
