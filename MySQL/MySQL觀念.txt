@@ -1,0 +1,16 @@
+
+從csv file匯入database table:
+  目標為用現成csv檔自動建立table, 並import data到table內
+  方法:
+    1. MySQL workbench: Table data import wizard
+      優:不需code, 由現有csv進行UI操作即可自動CREATE TABLE和IMPORT DATA，若匯入成功節省大量時間
+      缺:容易建立empty table且無錯誤訊息，不知為什麼匯入失敗
+      
+    2. LOAD DATA INFILE: 先手動create table, 再用SQL 語法LOAD DATA INFILE匯入資料
+      優:使用SQL語法，可觀察Log得知運行狀況和錯誤紀錄
+      缺:需先建立Table, 若有多個table則很費時間，且不同table需寫不同的LOAD DATA語法
+    
+    3. 使用Programming Script自動匯入:
+      優:
+      缺:
+
