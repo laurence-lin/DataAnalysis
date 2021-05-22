@@ -1,8 +1,13 @@
-Sqlalchemy: 和database溝通的python套件，建立engine和database的API溝通，類似postgresql的psycopg
+Sqlalchemy: 和database溝通的python套件，建立engine和database的API溝通
 可自動建立table並匯入資料
+
+Object Relational Mapping(ORM)物件關聯對應: 在database相關應用中，ORM代表例如想用Python語言撰寫命令以取代SQL, 來對DB做操作。
+  如: 用sqlalchemy寫python程式建立新table, 而非用SQL CREATE TABLE。
+
 
 Engine: 
   sqlalchemy用engine和database API溝通。
+  Database API例如python和各項database溝通的API，如psycopg用於postgreSQL.
   Database API為實現Pool和Dialect功能以完成"資料庫的各項動作"，需建立engine來接收pool 和dialect的資訊。
 
 
