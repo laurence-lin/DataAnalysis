@@ -10,7 +10,7 @@
       優:使用SQL語法，可觀察Log得知運行狀況和錯誤紀錄
       缺:需先建立Table, 若有多個table則很費時間，且不同table需寫不同的LOAD DATA語法
     
-    3. 使用Programming Script自動匯入:
-      優:
-      缺:
+    3. 使用Programming Script: sqlalchemy自動匯入:
+      優: 只要有csv 和pandas >= 1.2.4, 加上sqlalchemy即可直接匯入table
+      缺: create table 和 load data為to_sql自動生成的script, 無法手動調整匯入設定
 
