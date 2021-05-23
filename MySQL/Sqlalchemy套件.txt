@@ -9,5 +9,13 @@ Engine:
   sqlalchemy用engine和database API溝通。
   Database API例如python和各項database溝通的API，如psycopg用於postgreSQL.
   Database API為實現Pool和Dialect功能以完成"資料庫的各項動作"，需建立engine來接收pool 和dialect的資訊。
-
+  
+  create engine:
+    create_engine("Dialect+driver://username:password/host:port/database",
+      pool_recycle = 3600
+    )
+    
+    Dialect用DB為代號，如: mysql, postgresql, ...
+    driver: 在python中為python API，如: psycopg, msql, pymysql...
+    pool_recycle: 設定連線超過一定時間後即回收此連線
 
