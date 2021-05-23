@@ -13,4 +13,17 @@
     3. 使用Programming Script: sqlalchemy自動匯入:
       優: 只要有csv 和pandas >= 1.2.4, 加上sqlalchemy即可直接匯入table
       缺: create table 和 load data為to_sql自動生成的script, 無法手動調整匯入設定
-
+      
+  Database 型態: wide format & long format, 代表tabular data的不同表現方式
+    Wide format: 即一般的dataframe format, 每一筆新資料都用一個row來呈現
+      ex:           col1  col2  
+         person     val1  val2
+         
+         
+         
+    Long format: 格式大約為 entity - attribute - value, 每一筆資料可由多個row來呈現，好處是dataframe的樣式固定。
+       不像wide format, 當新增一個field時就需要增加column，且是每一筆資料都增加該field.
+       
+       EX: entity  attribute  value
+           person1  col1       val1
+           person2  col2       val2
