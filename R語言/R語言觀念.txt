@@ -5,11 +5,13 @@ R language:
 主要優點: 支援大量統計分析工具、資料視覺化
 
 R常用的功能package:
- 
-readr: import dataset
- 
-dplyr: data cleaning
+  readr: import dataset
+  dplyr: data cleaning
 
+%% 重要! R語言使用上和Python不同的問題
+1. 重複使用變數變換會造成隱藏錯誤 ex.convert(var1, as.character) 使用convert 2次可能回傳NA
+2. For loop在R中若data很大時速度會很慢, 因此有apply(), lapply()等函數代替
+3. 使用未定義的指令不會馬上停止在那行, 而是繼續執行很久並跳出不明錯誤  ex: 用stop不會馬上停止程式, 不容易中斷偵錯
 
 R語言在使用package時需先load package,即import
 library(package name)
