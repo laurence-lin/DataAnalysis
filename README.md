@@ -16,12 +16,13 @@ Google sheet Cell Reference: https://edu.gcfglobal.org/en/googlespreadsheets/typ
 
 資料科學與機器學習:
 資料科學分析有三種方法:
+
 描述性分析: Why 和 How ?
-  利用數據本身做統計、視覺化以顯示特定資訊，用資料本身來描述我們關注的商業問題
+  利用數據本身做統計、視覺化以顯示特定資訊或統計數據，用資料本身來描述我們關注的商業問題
   用到方法: statistics, visualization
   
 解釋性分析: Why ? 
-  除了描述資料的現象之外，詢問為什麼會出現這樣的現象? 通常會建立統計或ML模型，並計算不同特徵對"結果"造成的影響程度
+  除了描述資料的現象(統計數據)之外，解釋為什麼會出現這樣的現象? 通常會建立統計或ML模型，並計算不同特徵對"結果"造成的影響程度
   用到方法: statistics, machine learning, feature importances
   
 預測性分析: What ?
