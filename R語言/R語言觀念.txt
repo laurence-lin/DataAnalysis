@@ -58,6 +58,10 @@ Documentation & Reports:
    R markdown ends with .Rmd, 可用於Html, PDF等形式展現。
    R markdown即用R program加上每個stage的注釋後，存為.Rmd, 並用HTML等格式呈現。類似jupyter notebook.
    
+tsibble: 加上temporal structure 的 dataframe 結構，含有 key index
+其中 index 即為包含時間訊息的column
+key: 另一個tsibble 必備的時間屬性，為一或多個column. tsibble 預設依照 key 來排序
+   
   
   
   
