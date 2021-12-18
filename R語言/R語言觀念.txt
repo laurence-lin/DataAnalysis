@@ -28,6 +28,8 @@ names: 可對vector和list中的element進行命名
 
   list("var1" = 1, "var2" = 4)
 
+右assign: function_calculation -> variable_name
+ 適用於很長的command後面賦予變數值
 
 兩種Vector: atomic vector & list
   atomic vector:
@@ -58,9 +60,15 @@ Documentation & Reports:
    R markdown ends with .Rmd, 可用於Html, PDF等形式展現。
    R markdown即用R program加上每個stage的注釋後，存為.Rmd, 並用HTML等格式呈現。類似jupyter notebook.
    
-tsibble: 加上temporal structure 的 dataframe 結構，含有 key index
+tsibble: 加上temporal structure 的 dataframe 結構，含有 key 和 index.適合處理時間性資料
 其中 index 即為包含時間訊息的column
 key: 另一個tsibble 必備的時間屬性，為一或多個column. tsibble 預設依照 key 來排序
+在 tsibble 中做 summarise(tsibble, sum_function)
+ 會針對 key column 進行聚合計算
+ 
+建立新 column: mutate
+mutate(df, col_name=col_value)
+ 
    
   
   
